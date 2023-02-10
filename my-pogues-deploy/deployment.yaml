@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-pogues-ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-pogues-ui
+  template:
+    metadata:
+      labels:
+        app: my-pogues-ui
+    spec:
+      containers:
+        - name: my-pogues-ui
+          image: laurentc35/my-pogues:1.5.1

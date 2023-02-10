@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-pogues-ui-svc
+spec:
+  selector:
+    app: my-pogues-ui
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
