@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: deep-cors-ui-svc
+spec:
+  selector:
+    app: deep-cors-ui
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
