@@ -7,9 +7,9 @@ metadata:
 spec:
   tls:
     - hosts:
-        - path-tolong-stromae.demo.insee.io
+        - path-tolong-stromae12.demo.insee.io
   rules:
-    - host: path-tolong-stromae.demo.insee.io
+    - host: path-tolong-stromae12.demo.insee.io
       http:
         paths:
           - path: /
