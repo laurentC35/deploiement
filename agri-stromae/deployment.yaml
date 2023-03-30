@@ -14,7 +14,4 @@ spec:
     spec:
       containers:
         - name: agri-stromae-ui
-          image: laurentc35/stromae-lunatic
-          env:
-          - name: AUTHENTICATION_TYPE
-            value: "NONE"
+          image: laurentc35/stromae-lunatic:0.0.1
