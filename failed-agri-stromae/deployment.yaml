@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: failed-agri-stromae-ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: failed-agri-stromae-ui
+  template:
+    metadata:
+      labels:
+        app: failed-agri-stromae-ui
+    spec:
+      containers:
+        - name: failed-agri-stromae-ui
+          image: laurentc35/stromae-lunatic:0.0.2

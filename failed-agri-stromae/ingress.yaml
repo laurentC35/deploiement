@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: failed-agri-stromae-ui-ingress
+  annotations:
+    kubernetes.io/ingress.class: nginx
+spec:
+  tls:
+    - hosts:
+        - path-tolong-stromae.demo.insee.io
+  rules:
+    - host: path-tolong-stromae.demo.insee.io
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: failed-agri-stromae-ui-svc
+                port:
+                  number: 80
