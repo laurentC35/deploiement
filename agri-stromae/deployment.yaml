@@ -17,4 +17,4 @@ spec:
           image: laurentc35/stromae-lunatic
           env:
             - name: AUTHENTICATION_TYPE
-              value: NONE
+              value: "NONE"
